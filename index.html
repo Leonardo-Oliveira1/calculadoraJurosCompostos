@@ -12,20 +12,20 @@
         <div class="content">
             <div class="form">
             <label id="label1">Valor inicial</label>
-                <input type="number" id="initial_value" placeholder="0.00">
+                <input type="number" id="initial_value" min="0" placeholder="0.00">
 
                 <label id="label2">Valor mensal</label>
-                <input type="number" id="monthly_value" placeholder="0.00">
+                <input type="number" id="monthly_value" min="0" placeholder="0.00">
                 
                 <label id="label3">Taxa de juros</label>
-                <input type="number" id="interest_rate" placeholder="0.00">
+                <input type="number" id="interest_rate" min="0" placeholder="0.00">
                 <select id="interest_rate_time">
                     <option value="rate_mounth">% Mensal</option>
                     <option value="rate_year">% Anual</option>
                 </select>
 
                 <label id="label4">Período em</label>
-                <input type="number" id="period" placeholder="0">
+                <input type="number" id="period" min="0" placeholder="0">
                 <select id="period_time">
                     <option value="period_mounth">Meses</option>
                     <option value="period_year">Anos</option>
