@@ -22,10 +22,20 @@ calculate_input.addEventListener("click", function(){
     const periodTime: string = (<HTMLSelectElement>period_time).value;
 
     //TIME MEASUREMENTS
-    if (periodTime == "period_year"){
-        period = period * 12;
-    }else{
-        period = parseInt(period_input.value)
+
+    switch (periodTime) {
+        case "period_year":
+            period = period * 12;
+            break;
+
+        case "period_mounth":
+            period = parseInt(period_input.value)
+            break;
+
+        case "period_daily":
+            period = period / 30;
+            console.log("Diario")
+            break;
     }
 
     if (interestRateTime == "rate_year"){
