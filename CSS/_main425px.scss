@@ -5,7 +5,7 @@
         position: relative;
         left: 59px;
         
-        margin: 10px 210px;
+        margin: 10px 142px;
         margin-bottom: 30px;
         
     }
@@ -18,7 +18,7 @@
             flex-direction: column;
             gap: 20px;
 
-            margin-left: 203px;
+            margin-left: 142px;
     
             .finalTotalDiv, .totalInvestedDiv, .totalInterestRateDiv{
                 flex-direction: column;
@@ -31,11 +31,11 @@
 
         #initial_value, #monthly_value{
             width: 300px;
-            margin-left: 169px;
+            margin-left: 100px;
         }
     
         #initial_value{
-            margin-left: 169px;
+            margin-left: 100px;
         }
     
         label{
@@ -43,33 +43,33 @@
         }
 
         #label1{
-            margin-left: 241px;
+            margin-left: 100px;
         }
 
         #label2{
-            margin-left: 241px;
+            margin-left: 100px;
             margin-top: 90px;
         }
 
         #label3{
-            margin-left: 241px;
+            margin-left: 100px;
             margin-top: 180px;
         }
 
         #label4{
-            margin-left: 241px;
+            margin-left: 100px;
             margin-top: 270px;
         }
 
         input{
-            margin-left: 170px;
+            margin-left: 100px;
         }
 
         select{
             left: 440px;
             bottom: 46px;
             
-            margin: -19px -24px;
+            margin: -19px -43px;
             }
         }
     }
