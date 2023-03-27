@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.maskMoney.js" type="text/javascript"></script>
     <title>Juros Compostos - Leonardo Oliveira</title>
 </head>
 <body>
@@ -13,13 +15,13 @@
         <div class="content">
             <div class="form">
             <label id="label1">Valor inicial</label>
-                <input type="number" id="initial_value" min="0" placeholder="0.00">
-
-                <label id="label2">Valor mensal</label>
-                <input type="number" id="monthly_value" min="0" placeholder="0.00">
+            <input type="text" class="form-control" id="initial_value" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
+            
+            <label id="label2">Valor mensal</label>
+            <input type="text" class="form-control" id="monthly_value" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
                 
                 <label id="label3">Taxa de juros</label>
-                <input type="number" id="interest_rate" min="0" placeholder="0.00">
+                <input type="number" id="interest_rate" min="0" placeholder="0.00" required>
                 <select id="interest_rate_time">
                     <option value="rate_mounth">% Mensal</option>
                     <option value="rate_year">% Anual</option>
@@ -56,4 +58,15 @@
     </div>
 </body>
 <script src="JS/app.js"></script>
+
+<script>
+    $(function() {
+        $('#initial_value').maskMoney();
+    })
+
+    $(function() {
+        $('#monthly_value').maskMoney();
+    })
+</script>
+
 </html>
