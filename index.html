@@ -15,39 +15,39 @@
         <div class="content">
             <div class="form">
             <label id="label1">Valor inicial</label>
-            <input type="text" class="form-control" id="initial_value" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
+            <input type="text" class="form-control" id="initial_value" value="R$ 431,55" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
             
             <label id="label2">Valor mensal</label>
-            <input type="text" class="form-control" id="monthly_value" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
+            <input type="text" class="form-control" id="monthly_value" value="R$ 32,15" data-thousands="." data-decimal="," data-prefix="R$ " /><br>
                 
                 <label id="label3">Taxa de juros</label>
-                <input type="number" id="interest_rate" min="0" placeholder="0.00" required>
+                <input type="number" id="interest_rate" min="0" value="12.56" placeholder="0.00" required>
                 <select id="interest_rate_time">
                     <option value="rate_mounth">% Mensal</option>
-                    <option value="rate_year">% Anual</option>
+                    <option value="rate_year" selected>% Anual</option>
                 </select>
 
                 <label id="label4">Período em</label>
-                <input type="number" id="period" min="0" placeholder="0">
+                <input type="number" id="period" min="0" value="1" placeholder="0">
                 <select id="period_time">
                     <option value="period_mounth">Meses</option>
-                    <option value="period_year">Anos</option>
-                    <option value="period_daily">Dias</option>
+                    <option value="period_year" selected>Anos</option>
                 </select>
                 
             </div>
             <button id="calculate">CALCULAR</button>
 
             <div class="result">
+                <div class="finalTotalDiv">
+                    <p>Valor total final</p>
+                    <h1 id="final_total">R$ 0,00</h1>
+                </div>
+                
                 <div class="totalInvestedDiv">
                     <p>Valor total investido</p>
                     <h1 id="total_invested">R$ 0,00</h1>
                 </div>
 
-                <div class="finalTotalDiv">
-                    <p>Valor total final</p>
-                    <h1 id="final_total">R$ 0,00</h1>
-                </div>
                 
                 <div class="totalInterestRateDiv">
                     <p style="color: #276B00">Total acumulado em juros</p>
@@ -57,7 +57,7 @@
         </div>
     </div>
 </body>
-<script src="JS/app.js"></script>
+<script type="module" src="JS/app.js"></script>
 
 <script>
     $(function() {
